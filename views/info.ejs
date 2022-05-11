@@ -1,94 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My test Page</title>
-    <link rel="stylesheet" href="..\styles\main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My test Page</title>
+  <link rel="stylesheet" href="..\styles\main.css">
 </head>
-<div id ="header">
-        <div id = "wraper">
-            <button class = "index", id = browse>Home</button>
-            <button class = "index", id = stages>Stages</button>
-            <button class = "index", id = about_us>About us</button>
-            <button class = "index", id = FAQ>FAQ and advices</button>
-        </div>
-    
-    <div id = info>
-          <div class="row">
-            <div class="leftcolumn">
-              <div class="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Dec 7, 2017</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-              </div>
-              <div class="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Sep 2, 2017</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-              </div>
-            </div>
-            <div class="rightcolumn">
-              <div class="card">
-                <h2>About Me</h2>
-                <div class="fakeimg" style="height:100px;">Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-              </div>
-              <div class="card">
-                <h3>Popular Post</h3>
-                <div class="fakeimg"><p>Image</p></div>
-                <div class="fakeimg"><p>Image</p></div>
-                <div class="fakeimg"><p>Image</p></div>
-              </div>
-              <div class="card">
-                <h3>Follow Me</h3>
-                <p>Some text..</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="footer">
-            <h2>Footer</h2>
-          </div>
-            </style>
-            </head>
-    </div>
+
+<body>
+  <div id="toolbar">
+    <a href="/">
+      <button type="button">Home</button>
+    </a>
+    <a href="/info">
+      <button type="button">Stages</button>
+    </a>
+    <a href="/info">
+      <button type="button">About us</button>
+    </a>
+    <a href="/info">
+      <button type="button">FAQ and advices</button>
+    </a>
+  </div>
+
+  <img src="../public/photos/index/homephoto.jpg">
 
 
-            <!-- <main>
-            <div id = "cookies">
-                    <!--text in top-->  <!--
-                    <p>My cookies (if you dont like leave):)</p>
-                    <!--text box's-->
-                   <!-- <button id="button">X</button>
-                    <!--Name and email fileds--><!--
-                        <label for="textbox">Name:</label>
-                        <input id ="name" type="text" name="Name"> 
-                        <label for="email">E-mail:</label>
-                        <input id ="email" type="email" name="email"> 
-                        <p>whitch package is query about?</p>
-                    <!--radio button's--><!--
-                        <input type="radio" id="testone" name="test" value="first">
-                        <label for="testone">Standard</label><br>
-                        <input type="radio" id="testtwo" name="test" value="second">
-                        <label for="testtwo">The chozen One package</label>
-                    <br>
-                    <br>
-                    <!--querry textbox--><!--
-                        <p>we may respond via owl, on a scale of 1 to 10, how scared are you of <br>owls?<br>(10 being the most scared)</p>
-                        <input type="number" name="numer"> <br>
-                    <!--querry textbox--><!--
-                        <label for="query">please enter your query:</label> <br>
-                        <textarea name="textarea" id="text" cols="60" rows="10"></textarea>
-                        <button id ="Submit">Submit</button>
-            </div> -->
+  <div class="wrapper">
+
+    <br><br><br><br>
+
+
+    <div class="card">
+      <div class="desc">
+        <h3>Main Stage</h3>
+
+        Data on Quandl is organized into databases and datasets.
+
+        <p>A dataset is a single time series, with one or more columns. Column 0 of a dataset is always the date column.
+          Columns 1 to n are data columns.</p>
+
+        <p>A database is a collection of datasets from a single publisher and/or on a single subject.</p>
+
+        <p>The Quandl API provides methods to access both dataset and database objects, provided you know their Quandl
+          codes.</p>
+      </div>
+      <pre class="code">
+        
+      </pre>
     </div>
-    </main>
-    <script src="scripts/main.js"></script>
+
+    <div class="card">
+      <div class="desc">
+        <h3>Quandl Codes</h3>
+
+        Every database on Quandl has a unique string identifier called the database_code.
+
+        <p>Every dataset on Quandl belongs to one and exactly one database. Every dataset thus has a database_code as
+          well as a dataset_code associated with it. Both of these are required to uniquely identify the dataset.</p>
+
+        <p>The combination of database_code and dataset_code is called the Quandl code.</p>
+      </div>
+      <pre class="code">World</pre>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="scripts/main.js"></script>
 </body>
+
 </html>
