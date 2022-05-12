@@ -24,12 +24,16 @@ app.get("/", (req, res)=> {
     res.render("index");
 })
 
-app.get("/contact\ us", (req, res)=> {
-    res.render("contact\ us");
+app.get("/contact", (req, res)=> {
+    res.render("contact");
 })  
 
 app.get("/info", (req, res)=> {
     res.render('info');
+})
+
+app.get("/contact_us", (req, res)=> {
+    res.render('Contact_us');
 })
 
 app.post("/recived", (req, res)=> {
@@ -41,7 +45,5 @@ app.post("/recived", (req, res)=> {
     })  
 })  
 
-app.get("/users/:username", (req, res)=> {
-    res.send(`<h1>wlecome ${req.params.username}</h1>`);
-})
+
 app.listen(5000, ()=>{console.log("server started! ")});

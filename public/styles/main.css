@@ -47,6 +47,7 @@ body {
   background: #dedede;
   height: 100%;
   font-family: 'Courier New';
+  background-image: url("photos/index/homephoto.jpg");
 }
 
 /* .wrapper {
@@ -59,6 +60,7 @@ body {
   margin:  20px;
   border: 1px solid #000;
   background: #fff;
+
 }
 .desc, .code {
   width: 43%;
@@ -70,10 +72,34 @@ body {
 }
 .code {
   display: inline-block;
-  float: right;
+  float:right;
   background: #eee;
   color: #333;
   border: 1px solid #aaa;
   height: 100%;
   padding: 10px;
 }
+
+
+
+/*o que eu fiz*/
+#header{
+  background-image: url("photos/index/meoswheader.jpg");
+}
+#code2 {
+    background-image: url("../photos/index/meoswheader.jpg");
+    background-size: 100%;
+    text-align: center;
+    border: 1px solid #000000;
+    width: 39%;
+    display: inline-block;
+    height: 100%;
+    font-size: 100%;
+    text-align: center;
+    padding: 5vw 0vw 5vw 0vw;
+    min-width:10vw;
+    float:right;
+
+
+}
+  
