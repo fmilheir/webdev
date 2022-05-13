@@ -24,8 +24,14 @@ app.get("/", (req, res)=> {
     res.render("index");
 })
 
+
+app.post("/add", (req, res)=> {
+  console.log(req);
+})
+
 app.get("/contact", (req, res)=> {
     res.render("contact");
+    
 })  
 
 app.get("/info", (req, res)=> {
@@ -37,9 +43,9 @@ app.get("/contact_us", (req, res)=> {
 })
 
 app.post("/recived", (req, res)=> {
-    let username =req.bod.username;
+    let name =req.bod.username;
     let email = req.body.email;
-    let password = req.body.password;
+    let message = req.body.password;
     sql.query("INSERT INTO website(user _name, email, password) VALUES(?,?,?)",[username, email, password], (error,results)=>{
         res.render("result", {err : error})
     })  

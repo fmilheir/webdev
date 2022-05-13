@@ -72,7 +72,6 @@ body {
 }
 .code {
   display: inline-block;
-  float:right;
   background: #eee;
   color: #333;
   border: 1px solid #aaa;
@@ -98,8 +97,5 @@ body {
     text-align: center;
     padding: 5vw 0vw 5vw 0vw;
     min-width:10vw;
-    float:right;
-
-
 }
   
